@@ -1,8 +1,7 @@
 # Use the cm2network/steamcmd as the base image
 FROM cm2network/steamcmd
 
-RUN sudo dpkg --add-architecture i386 && \
-    sudo apt-get update && \
+RUN sudo apt-get update && \
     sudo apt-get install -y lib32gcc-s1 && \
     sudo apt-get clean
 
