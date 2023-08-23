@@ -4,8 +4,7 @@ FROM cm2network/steamcmd
 RUN dpkg --add-architecture i386 && \
     apt-get update && \
     apt-get install -y lib32gcc-s1 && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+    apt-get clean
 
 WORKDIR /home/steam
 
