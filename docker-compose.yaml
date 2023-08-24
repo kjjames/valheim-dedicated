@@ -6,6 +6,7 @@ services:
       dockerfile: Dockerfile
     image: valheim-dedicated
     environment:
+      # TODO: Define outside of docker-compose.yaml file
       SERVER_NAME: dick-longship
       SERVER_PASS: somesecretexample
       WORLD_NAME: nebula-noodle

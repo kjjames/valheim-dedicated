@@ -16,7 +16,7 @@ RUN chmod +x /home/steam/start_server.sh
 COPY scripts/valheim.sh /home/steam/valheim.sh
 RUN chmod +x /home/steam/valheim.sh
 
-# Set the start_server.sh script as the default command
+# Set the init.sh script as the default command
 # Automatically execute this script whenever a container is started based on the image
 CMD ["/home/steam/init.sh"]
 ENTRYPOINT ["bash"]
